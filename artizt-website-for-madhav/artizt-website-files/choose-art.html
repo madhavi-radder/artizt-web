@@ -1,0 +1,706 @@
+<!-- <?php include 'includes/top.php';?> -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />    
+    <link href="css/aos.css" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    
+    <title>Artizt Network</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<style>
+   
+   
+   .choose-art .select2{
+        max-width: calc(100% - 110px);
+        min-width: calc(100% - 110px);
+   }
+   
+   .choose-art .searchsubmit{
+       right: 130px;
+   }
+   
+   .btn-addnew{
+       padding:13px 17px;
+   }
+   
+  #p{
+ height: 170px;
+ width: auto;
+ border-radius: 14px;
+ position: relative;
+ color: white;
+ 
+   }
+   #p{
+    
+    width: auto;
+    border-radius: 14px;
+    background-image: url(https://img.freepik.com/free-photo/beautiful-brunette-woman-singing-microphone-isolated-gray-wall_231208-12884.jpg?w=2000);
+  background-size: cover;
+   }
+   .main{
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.main input[type="checkbox"] {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}
+.main label {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main input[type="checkbox"]:checked + label::before {
+  content: "✓";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color:black; *
+
+  /* border-radius: 50%; */
+  width: 10px;
+  height: 10px;
+  color:black;
+}
+.text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+.optprimary{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color:white;
+  padding: 5px;
+}
+
+    
+</style>
+  </head>
+  <body class="home">
+    <header id="header" class="main-header site-navbar pad-top-15  pad-bot-15" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+      <div class="container">
+         <div class="row align-items-center justify-content">
+            <div class="col">
+               <nav class="navbar navbar-expand-lg">
+                   <a class="navbar-brand" href="index.php"><img src="images/logo.svg"></a>                   
+
+                   <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </button> -->
+                   <div class="collapse navbar-collapse non-signin" id="navbarDefault">
+                     <ul class="navbar-nav mr-auto ml-auto">
+                       <!-- <li class="nav-item active">
+                         <a class="nav-link" href="#">Find Talent <span class="sr-only">(current)</span></a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">Find Work</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">Why Artizt</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">Events</a>
+                       </li> -->
+                     </ul>
+                     <span class="navbar-text">
+                       <a href="login.php" class="btn btn-normal bg-none shodow-none btn-padding-10 text-black">Log In</a>
+                       <a href="newjoin.php" class="btn btn-select border-radius-30 btn-padding-10">Sign Up</a>
+                     </span>
+                   </div>
+                   <div class="mobile-top-links">
+                       <!-- <a href="login.html" class="btn btn-normal"><i class="fa fa-sign-in" aria-hidden="true"></i> Log In</a> -->
+                       <a href="create-account.php" class="btn btn-select border-radius-30 btn-padding-10"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
+                     </div>
+                 </nav>
+            </div>
+         </div>
+      </div>
+   </header>
+
+      <span class="fixed-header-pading"></span>
+      <main>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12 mar-top-70 mar-bot-70">
+                  <div class="row">
+                      <div class="col-sm-12 processbar">
+                          <span class="professional-info-bar active"></span>
+                          <span class="professional-info-bar"></span>
+                          <span class="professional-info-bar"></span>
+                          <span class="professional-info-bar"></span>
+                          <span class="professional-info-bar"></span>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                        <p class="pad-top-10 text-dark-gray">Professional Information (1/5)</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 pad-top-60 pad-bot-30">
+                      <h2>Select Artz / Artizt</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-lg-6 col-md-6 mar-bot-10">
+                        <h3>Top Artz / Artizt</h3>
+                    </div>
+                    <div class="col-sm-8 col-lg-6 col-md-6 mar-bot-20">
+                      <div class="searchbox">
+                        <form class="searchform">
+                            <div class="row">
+                              <div class="col-sm-12 col-12 choose-art">                                  
+                                <!-- <input class="searchfiled" type="text" name="full_name" id="searchtext" placeholder="Search your Industry" required> -->
+                                <select class="js-example-basic-multiple searchfiled" name="states[]" multiple="multiple" placeholder="Search your Industry">
+                                  <option value="Acting">Acting</option>
+                                  <option value="Singing">Singing</option>
+                                  <option value="Music">Music</option>
+                                  <option value="Dance">Dance</option>
+                                  <option value="Painting">Painting</option>
+                                  <option value="Wring">Wring</option>
+                                  <option value="Film Making">Film Making</option>
+                                  <option value="Literature">Literature</option>
+                                  <option value="Architecture">Architecture</option>
+                                  <option value="Direction">Direction</option>
+                                  <option value="Script Writing">Script Writing</option>
+                                  <option value="Cinematography">Cinematography</option>
+                                  <option value="Choreography">Choreography</option>
+                                  <option value="Production Executive">Production Executive</option>
+                                  <option value="Casting Director">Casting Director</option>
+                                  <option value="Dubbing Artist">Dubbing Artist</option>
+                                  <option value="Makeup Artist">Makeup Artist</option>
+                                  <option value="Costume Designing">Costume Designing</option>
+                                  <option value="Publicity Designing">Publicity Designing</option>
+                                  <option value="Audiography">Audiography</option>
+                                  <option value="Outdoor Lightmen">Outdoor Lightmen</option>
+                                  <option value="Studio Workers">Studio Workers</option>
+                                  <option value="Production Assistance">Production Assistance</option>
+                                  <option value="Cinema Drivers">Cinema Drivers</option>
+                                  <option value="Junior Artist Agent">Junior Artist Agent</option>
+                                  <option value="Technical unit">Technical unit</option>
+                                  <option value="Production Women">Production Women</option>
+                                  <option value="Junior Artist">Junior Artist</option>
+                                  <option value="Graphic design">Graphic design</option>
+                                  <option value="Storyboard">Storyboard</option>
+                                  <option value="Editing">Editing</option>
+                                  <option value="Lyricist">Lyricist</option>
+                                  <option value="Stunt">Stunt</option>
+                                  <option value="Art Direction">Art Direction</option>
+                                  <option value="Content writers">Content writers</option>
+                                  <option value="Poet">Poet</option>
+                                  <option value="Fashion Modelling">Fashion Modelling</option>
+                                  <option value="Photography">Photography</option>
+                                  <option value="Cartoonist">Cartoonist</option>
+                                  <option value="DJ">DJ</option>
+                                  <option value="RJ">RJ</option>
+                                  <option value="Illustration">Illustration</option>
+                                  <option value="Sculpture">Sculpture</option>
+                                  <option value="Miniature">Miniature</option>
+                                  <option value="Standup comedian">Standup comedian</option>
+                                  <option value="Youtubers">Youtubers</option>
+                                  <option value="Puppetry">Puppetry</option>
+                                  <option value="Tattoo artizt">Tattoo artizt</option>
+                                  <option value="Magician">Magician</option>
+                                  <option value="Bandwala">Bandwala</option>
+                                  <option value="Card art">Card art</option>
+                                  <option value="Rangoli Art">Rangoli Art</option>
+                                  <option value="Street Artists">Street Artists</option>
+                                  <option value="Mimicry Artist">Mimicry Artist</option>
+                                  <option value="Stone Art">Stone Art</option>
+                                  <option value="Micro Art">Micro Art</option>
+                                  <option value="Sand Art">Sand Art</option>
+                                  <option value="Gymnastic">Gymnastic</option>
+                                </select>
+                                <button type="submit" class="searchsubmit"><img src="images/search.png"></button>
+                                <!--<a href="#" data-toggle="modal" data-target="#addnew" class="pull-right ft-14 pt-2 pr-2">Add New </a>-->
+                                <a href="#" data-toggle="modal" data-target="#addnew" class="btn btn-normal btn-addnew ft-14 pull-right mr-0">Add New </a>
+                              </div>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!--<div class="row">
+                      <div class="col-md-12">
+                          <div class="btn choose-white choose-white-select border-radius-30">
+                              Acting 
+                          </div>
+                          <div class="btn choose-white border-radius-30">
+                              Singing 
+                              
+                              <div class="setprimary text-left">
+                                <div class="optprimary">Set as primary</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>-->
+                  
+                  
+                  <div class="row">                    
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p",  >
+                        <p class="text">Acting</p>
+                        <div id="img" class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p" >
+                        <p class="text">Singing</p>
+                        <div id="img"  class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div id="img" class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p" >
+                        <p class="text">Music</p>
+                        <div id="img"  class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p" >
+                        <p class="text">Dance</p>
+                        <div class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p", >
+                        <p class="text">Painting</p>
+                        <div class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p" >
+                        <p class="text">Wring</p>
+                        <div id="text" class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div  id="p">
+                        <p class="text">Fashion Modelling</p>
+                        <div class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p">
+                        <p class="text">Film Making</p>
+                        <div class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p">
+                        <p class="text">Direction</p>
+                        <div class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p">
+                        <p class="text">Script Writing</p>
+                        <div class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p" >
+                        <p class="text">Photography</p>
+                        <div class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 pr-2 pr-xs-auto mar-top-10 mar-bot-10" >
+                      <div id="p">
+                        <p class="text">Cinematography</p>
+                        <div class="setprimary text-left">
+                            <div class="optprimary">Set as primary</div>
+                            <div class="radios">
+                              <div class="main">
+                                <input id="bio1" name=button type="checkbox" class="open">
+                                  <label for="bio" class="overlay">
+                                   <div class="circle1"></div> 
+                                  </label>
+                                </input>
+                              </div>
+                            </div>
+                        </div>
+                        <!--<img src="images/director.svg" width="50" height="50" class="img-fluid mar-bot-10">-->
+                        
+                      </div>
+                    </div>
+                    
+                   
+                    </div>
+                    
+                    
+                </div>
+
+
+
+
+
+                  <div class="row">
+                    
+                    <div class="col-md-12 text-xs-center nextpage_btn">
+                      <a href="#" class="btn btn-padding-10 btn-select border-radius-30 mar-top-50 mr-0 m-300">Select All</a>
+                      <a href="choose-industry.php" class="btn btn-padding-10 pull-right pull-none btn-select border-radius-30 mar-top-50 mr-0 m-300">Artz / Artizt</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <span class="bottombg"></span>
+      </main>
+
+      <?php include 'includes/footer.php';?>
+      
+      
+      <div class="modal fade" id="addnew" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header b-modal-header text-center">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Add New Artz</h5>
+		        <button type="button" class="close modelclose_btn" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      	<form action="#">
+			      <div class="modal-body">
+    		            <div class="row">
+        	      			<div class="col-md-12">
+        	      				<div class="form-group">
+        					    	<label for="photolist">Title:</label>
+        					    	<input type="text" class="form-control big_box" id="photolist" aria-describedby="" placeholder="">
+        						</div>
+        	      			</div>
+        	      		</div>
+		  		  </div>
+
+			      <div class="modal-footer">
+			        <button type="submit" class="btn btn-select border-radius-30 pt-2 pb-2">Add New</button>
+			      </div>
+				</form>      
+		    </div>
+		  </div>
+		</div>
+      
+  </body>
+
+  <!-- <?php include 'includes/script.php';?> -->
+  <style>
+    .notification_dropdown  .left_dropdown, .others-profile-right .os_dropdown .left_dropdown {
+        left:20px !important;
+        right:auto !important;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+    <script src="js/jquery.countup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://use.fontawesome.com/9ad0804c94.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/aos.js"></script>
+     
+    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous"></script>
+   
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity=" sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script><script src="js/main.js"></script>
+    <script type="text/javascript" src="dist/js/pignose.calendar.full.js"></script>
+    <script src="mscroll/jquery.mCustomScrollbar.concat.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+<script>
+    
+    function openNav() {
+	  //document.getElementById("mySidenav").style.display = "block";
+	  $( "#mySidenav" ).show( "fast" );
+	  $( ".floating-menu" ).hide();
+	  $( ".closebtn" ).show();
+	}
+
+	function closeNav() {
+	  //document.getElementById("mySidenav").style.display = "none";
+	  $( "#mySidenav" ).hide( "fast" );
+	  $( ".floating-menu" ).show();
+	  $( ".closebtn" ).hide();
+	}
+    
+    $(document).ready(function () {
+        
+        $('[data-toggle="tooltip"]').tooltip();
+        
+        $('.dmenu').hover(function () {
+                $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+            }, function () {
+                $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+            });
+        }); 
+         
+            $(document).ready(function() {
+        	$(".megamenu").on("click", function(e) {
+        		e.stopPropagation();
+        	});
+        });
+</script>
+ 
+
+ <script  src="js/jquery.lazy.js"></script>
+    
+    <script type="text/javascript">
+    
+        $(function() {
+            $('.lazy').lazy();
+        });
+        
+        
+        
+        $( ".choose-white" ).click(function() {
+          $( this ).toggleClass( "choose-white-select" );
+        });
+    
+    
+      $(":checkbox").on('click', function(){  
+          //$(this).closest(".setprimary").toggleClass('selected setpry', this.checked);  
+            $(this).parent().addClass('active');
+
+        if($(this).prop("checked") == true){
+              $(this).closest(".setprimary").toggleClass('selected setpry', this.checked);
+              $(this).closest(".box-defult-2").addClass('box-defult-2-select', this.checked);
+          }
+          else if($(this).prop("checked") == false){
+              $(this).closest(".box-defult-2").removeClass('box-defult-2-select ', this.checked);
+              $(this).closest(".setprimary").toggleClass('selected', this.checked);
+              $(this).closest(".setprimary").addClass('reset', this.checked);
+              $(".reset .optprimary").html("Set as primary");
+        }
+      });
+      
+      $(".box-defult-2").on('click', function(){  
+          //alert("test");
+          // $(this).toggleClass("box-defult-2-select");
+          //$(this).closest(".setprimary").toggleClass('selected setpry', this.checked);   
+        /*if($(this).prop("checked") == true){
+              $(this).closest(".setprimary").toggleClass('selected setpry', this.checked);
+          }
+          else if($(this).prop("checked") == false){
+              $(this).closest(".setprimary").toggleClass('selected', this.checked);
+              $(this).closest(".setprimary").addClass('reset', this.checked);
+              $(".reset .optprimary").html("Set as primary");
+        }*/
+      });
+      
+      $(".optprimary").on('click', function(){  
+        $(this).html("<span class='primary'><span><i class='fa fa-star' aria-hidden='true'></i></span> Primary</span>");        
+      });
+      
+        
+            
+        
+      $(document).ready(function() {
+          $('.js-example-basic-multiple').select2({
+            placeholder: "Search your Industry",
+            //allowClear: true
+          });
+          /*$('.select2-search__field').on('click', function(){
+            alert("search"); 
+          });*/
+          
+          
+          
+          
+        
+          
+
+      });
+
+    </script>  
+</html>

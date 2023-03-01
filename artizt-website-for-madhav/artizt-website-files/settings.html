@@ -1,0 +1,1896 @@
+<!-- <?php include 'includes/top.php';?> -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+		integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+		integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+		integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+		crossorigin="anonymous" />
+	<link href="css/aos.css" rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+		integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet"
+		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+
+	<title>Artizt Network</title>
+
+
+	<link rel="stylesheet" type="text/css" href="css/others-profile-header.css">
+
+	<style>
+		.msg-border-box {
+			border: 1px solid #d9d9d9 !important;
+			width: 100%;
+		}
+
+		.form-control {
+			min-height: 47px;
+		}
+
+		.border-radius-8 {
+			border-radius: 0 8px 8px 0;
+		}
+
+		.border-radius-8:hover {
+			border-radius: 0 8px 8px 0;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<!-- <?php include 'includes/header-main.php';?> -->
+
+
+
+	<a class="floating-menu" onclick="openNav()">
+		<img src="images/menu.png">
+	</a>
+
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display: none;">&times;</a>
+
+	<div class="search-results-main">
+		<div class="search-results-left p-fixed" id="mySidenav">
+			<!-- <?php include 'includes/side-profile.php';?> -->
+			<div class="profile-name">
+				<a href="profile-view.php">
+					<img src="images/user-icon.png" alt="" />
+					Bibin Mathew
+					<span>Theatre/Drama</span>
+				</a>
+			</div>
+
+
+			<ul class="nav flex-column flex-nowrap overflow-hidden mySidenav1 mySidenav2">
+				<li class="nav-item">
+					<a class="nav-link" href="#"><span class="d-inline"><img
+								src="images/svg/user-settings-svgrepo-com.svg" class="d-flex pull-left pr-2" width="27"
+								alt="" /> Account Settings</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#account-created"><span class="d-inline"><img
+								src="images/svg/user-svgrepo.svg" class="d-flex pull-left pr-2" width="27" alt="" />
+							Account Created</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#my-devices"><span class="d-inline"><img src="images/svg/devices.svg"
+								class="d-flex pull-left pr-2" width="25" alt="" /> My Devices</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#lastsigned"><span class="d-inline"><img
+								src="images/svg/login-svgrepo-com.svg" class="d-flex pull-left pr-2" width="25"
+								alt="" /> Last Signed In</span></a>
+				</li>
+				<!--<li class="nav-item">
+		        <a class="nav-link" href="#viewpermission"><span class="d-inline"><img src="images/svg/contacts-svgrepo-com.svg" class="d-flex pull-left pr-2" width="25" alt="" /> Public View Setting</span></a>
+		    </li>-->
+				<li class="nav-item">
+					<a class="nav-link" href="#viewpermission"><span class="d-inline"><img
+								src="images/svg/folder-view-eye-svgrepo-com.svg" class="d-flex pull-left pr-2"
+								width="27" alt="" /> View Permissions</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#review-comments"><span class="d-inline"><img
+								src="images/svg/reveview-comments-svgrepo-com.svg" class="d-flex pull-left pr-2 mb-2"
+								width="27" alt="" /> Review & Comment Permission</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#tag-permissions"><span class="d-inline"><img
+								src="images/svg/tag-svgrepo-com.svg" class="d-flex pull-left pr-2" width="27" alt="" />
+							Tag Permissions</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact-permissions"><span class="d-inline"><img
+								src="images/svg/contacts-svgrepo-com.svg" class="d-flex pull-left pr-2" width="27"
+								alt="" /> Contact Permissions</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#blockedusers"><span class="d-inline"><img
+								src="images/svg/users-warning-svgrepo-com.svg" class="d-flex pull-left pr-2" width="27"
+								alt="" /> Blocked Users</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#spamreports"><span class="d-inline"><img
+								src="images/svg/spam-2-svgrepo-com.svg" class="d-flex pull-left pr-2" width="27"
+								alt="" /> Spam Reports</span></a>
+				</li>
+			</ul>
+			<!-- <?php // include 'includes/side-menu.php';?> -->
+
+			<ul class="nav flex-column flex-nowrap overflow-hidden mySidenav1 mySidenav2">
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="media.php"><span class="d-inline"><img
+								src="images/svg/folder-media-svgrepo-com.svg" class="d-flex pull-left pr-2" alt=""
+								width="25" />Artizt Media</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="store-listing.php"><span class="d-inline"><img
+								src="images/svg/mall-svg.svg" class="d-flex pull-left pr-2" alt="" width="25" />Artizt
+							Mall</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="academy.php"><span class="d-inline"><img
+								src="images/svg/education-svgrepo-com.svg" class="d-flex pull-left pr-2" alt=""
+								width="25" />Artizt Academy</span></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="club.php"><span class="d-inline"><img
+								src="images/svg/real-estate-house-svgrepo-com.svg" class="d-flex pull-left pr-2" alt=""
+								width="25" />Artizt Club</span></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="villa.php"><span class="d-inline"><img
+								src="images/svg/rural-hotel-house-with-birds-and-clouds-svgrepo-com.svg"
+								class="d-flex pull-left pr-2" width="25" alt="" />Artizt Ville</span></a>
+				</li>
+
+				<!--<li class="nav-item">
+				<a class="nav-link collapsed" href="#submenu4" data-toggle="collapse" data-target="#submenu4"><span class="d-inline"><img src="images/supervisor_account.svg" class="d-flex pull-left pr-2" alt="" />Artizt Universe</span></a>
+				<div class="collapse" id="submenu4" aria-expanded="false">
+					<ul class="flex-column ml-4 nav subitems">
+						<li class="nav-item"><a class="nav-link py-0" href="club.php"><span>Artizt Club</span></a></li>
+						<li class="nav-item"><a class="nav-link py-0" href="workspace.php"><span>Artizt Workspace</span></a></li>
+						 
+						<li class="nav-item"><a class="nav-link py-0" href="#"><span>Artizt Cafe</span></a></li>
+						<li class="nav-item"><a class="nav-link py-0" href="stay.php"><span>Artiztay</span></a></li>
+						<li class="nav-item"><a class="nav-link py-0" href="villa.php"><span>Artizt Ville</span></a></li>
+						<li class="nav-item"><a class="nav-link py-0" href="fezt.php"><span>Artizt Fezt</span></a></li>
+						
+					</ul>
+				</div>
+			</li>-->
+				<li class="nav-item">
+					<a class="nav-link" href="advertisements.php"><span class="d-inline"><img
+								src="images/svg/loudspeaker-with-sound-waves-svgrepo-com.svg" width="25"
+								class="d-flex pull-left pr-2" alt="" />Advertisements</span></a>
+				</li>
+
+				<!--<li class="nav-item">
+				<a class="nav-link collapsed" href="#business" data-toggle="collapse" data-target="#business"><span class="d-inline"><img src="images/lefticon-audio.png" class="d-flex pull-left pr-2" alt="" />Digital Marketing</span></a>
+				<div class="collapse" id="business" aria-expanded="false">
+					<ul class="flex-column ml-4 nav subitems">                
+						<li class="nav-item"><a class="nav-link py-0" href="marketing.php"><span>Marketing</span></a></li>
+					   
+						<li class="nav-item"><a class="nav-link py-0" href="advertisements.php"><span>Advertisements</span></a></li>
+					</ul>
+				</div>
+			</li>-->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="#submenu5" data-toggle="collapse" data-target="#submenu5"><span
+							class="d-inline"><img src="images/bookmark.svg" class="d-flex pull-left pr-2"
+								alt="" />Activities</span></a>
+					<div class="collapse" id="submenu5" aria-expanded="false">
+						<ul class="flex-column ml-4 nav subitems">
+							<li class="nav-item"><a class="nav-link py-0" href="javascript:void(0);"><span>Posts &
+										Feeds</span></a></li>
+							<li class="nav-item"><a class="nav-link py-0" href="saved-feeds.php"><span>Saved
+										Feeds</span></a></li>
+							<li class="nav-item"><a class="nav-link py-0"
+									href="javascript:void(0);"><span>Favourites</span></a></li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="analytics.php"><img src="images/svg/profits-analytics-svgrepo-com.svg"
+							class="d-flex pull-left pr-2" alt="" width="25" /> Analytics</span></a>
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="search-results-right">
+
+			<div id="account-settting">
+				<div class="row">
+					<div class="col-md-12 pad-bot-15 page-head">
+						<h2 class="text-black">Account Settings</h2>
+					</div>
+				</div>
+
+				<style>
+					.button {
+						margin-top: 0px;
+					}
+
+					.input-group>.form {
+						position: relative;
+						/* -ms-flex: 1 1 auto; */
+						/* flex: 1 1 auto; */
+						width: 100%;
+						/* min-width: 0; */
+						margin: 10px;
+						padding: 10px;
+						border-radius: 8px;
+					}
+
+					.input-group {
+						position: relative;
+						display: flex;
+						flex-direction: column;
+						width: 100%;
+
+						align-items: center;
+						justify-content: center;
+					}
+
+					.input-group-append {
+						display: flex;
+						justify-content: end;
+						align-items: end;
+						/* width: 35%; */
+						margin-bottom: -30px;
+
+					}
+
+					.col-md-2 {
+						margin-top: -38px;
+						padding: 10px;
+					}
+
+					.btn-selector {
+						/* border-radius: 10px; */
+						margin: 0px 18px;
+						background-color: rgb(240, 159, 130);
+						border: 1px solid rgb(238, 175, 152);
+						color: black;
+						border-radius: 25px;
+						/* height: 50px; */
+						padding: 10px;
+						width: 90px;
+					
+					}
+
+					.btn-selector:hover {
+						/* color: white; */
+						background-color: white;
+						color: black;
+						border: 1px solid rgb(224, 135, 102);
+					}
+
+					.row {
+						display: flex;
+						flex-direction: column;
+					}
+
+					.col {
+						/* max-width: 0px; */
+						margin-left: 80%;
+					}
+
+					.form2 {
+						width: 65%;
+						position: relative;
+						/* -ms-flex: 1 1 auto; */
+						/* flex: 1 1 auto; */
+						/* width: 100%; */
+						/* min-width: 0; */
+						margin: 10px;
+						padding: 10px;
+						border-radius: 8px;
+					}
+
+
+					.review {
+						width: 100px;
+						/* margin-left:12%; */
+						/* height: 50px; */
+						font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+						color: black;
+						background-color:bisque;
+						/* border:  1px solid  rgb(47, 47, 56); */
+						margin-bottom: 10px;
+						padding: 8px;
+						font-size: 18px;
+						border-radius: 25px;
+						/* border-radius: 0; */
+
+					}
+
+					#otp-field {
+						width: 200px;
+						padding: 15px;
+						/* margin: auto; */
+						border-radius: 5px;
+					}
+
+					/* .back {
+						background-color: cadetblue;
+						padding: 20px;
+						width: 250px;
+						margin-left: 20px;
+					} */
+
+					.digit-group{
+						display: flex;
+						width: 300px;
+						/* height: 100px; */
+						padding: 15px;
+						/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+						/* margin-left: 50%; */
+					}
+					.input{
+							width: 30px;
+							height: 40px;
+			border:1px solid #444857;
+							/* border: none; */
+							margin-left: 20px;
+							margin: 2px;
+							line-height: 50px;
+							text-align: center;
+							font-size: 24px;
+							font-family: 'Raleway', sans-serif;
+							font-weight: 200;
+							color:#444857;
+							margin: 0 2px;
+						}
+					
+				 .splitter {
+							padding: 0 6px;
+							color:black;
+							font-size: 24px;
+							/* width: 30px; */
+							/* margin-bottom; */
+						}
+						.digit-group1{
+							/* display: flex; */
+							width: 300px;
+							/* flex-direction: column; */
+							/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+							margin-left: 45px;
+							display: none;
+						}
+					
+				</style>
+				<!-- <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script> -->
+
+				<script>
+
+	
+					function myReview() {
+
+						var generateOtpBtn = document.querySelector(".digit-group1");
+						var back = document.querySelector(".back");
+						var otpField = document.getElementById('otp-field');
+						let review = document.querySelector(".review");
+
+
+
+						// Generate a random OTP (for example, a 6-digit number)
+						// const otp = Math.floor(100000 + Math.random() * 900000);
+
+						// Display the OTP field
+						review.style.display = "none";
+						// otpField.style.display = 'block';
+						// back.style.display = "block";
+						// otpField.value = otp;
+						generateOtpBtn.style.display="block";
+					}
+
+				</script>
+				<script>
+
+
+
+					function myFunction() {
+						let name = document.querySelector(".col-4");
+						let Elangovan = document.querySelector(".col-6");
+						let button = document.querySelector("button");
+						let mail = document.querySelector(".mail");
+						name.style.display = "none";
+						Elangovan.style.display = "none";
+						button.style.display = "none";
+						mail.style.display = "none";
+
+					}
+
+
+
+					function myCancel() {
+						let button = document.querySelector("button");
+						let name = document.querySelector(".col-4");
+						let Elangovan = document.querySelector(".col-6");
+						let formgroup = document.querySelector(".form-group");
+						formgroup.style.display = "none";
+						name.style.display = "inline";
+						Elangovan.style.display = "inline";
+						button.style.display = "inline";
+					}
+
+					function myFunction1() {
+						let mail = document.querySelector(".mail");
+						let email = document.querySelector(".mail1");
+						let button = document.querySelector(".button1");
+
+						mail.style.display = "none";
+						email.style.display = "none";
+						button.style.display = "none";
+					}
+
+					function myCancel1() {
+						let button = document.querySelector(".button1");
+						let mail = document.querySelector(".mail");
+						let email = document.querySelector(".mail1");
+
+						let formgroup = document.querySelector(".form-group1");
+						formgroup.style.display = "none";
+						mail.style.display = "inline";
+						email.style.display = "inline";
+						button.style.display = "inline";
+					}
+
+					function myFunction2() {
+						let user = document.querySelector(".user");
+						let username = document.querySelector(".user1");
+						let button = document.querySelector(".button2");
+
+						user.style.display = "none";
+						username.style.display = "none";
+						button.style.display = "none";
+					}
+					function myCancel2() {
+						let button = document.querySelector(".button2");
+						let user = document.querySelector(".user");
+						let username = document.querySelector(".user1");
+
+						let formgroup = document.querySelector(".form-group2");
+						formgroup.style.display = "none";
+						user.style.display = "inline";
+						username.style.display = "inline";
+						button.style.display = "inline";
+					}
+					function myFunction3() {
+						let user = document.querySelector(".pass");
+						let username = document.querySelector(".word");
+						let button = document.querySelector(".button3");
+
+						user.style.display = "none";
+						username.style.display = "none";
+						button.style.display = "none";
+					}
+					function myCancel3() {
+						let button = document.querySelector(".button3");
+						let user = document.querySelector(".pass");
+						let username = document.querySelector(".word");
+
+						let formgroup = document.querySelector(".form-group3");
+						formgroup.style.display = "none";
+						user.style.display = "inline";
+						username.style.display = "inline";
+						button.style.display = "inline";
+					}
+					function myFunction4() {
+						let otp=document.querySelector(".digit-group1");
+						let user = document.querySelector(".phone");
+						let username = document.querySelector(".no");
+						let button = document.querySelector(".button4");
+						let varify = document.querySelector(".review");
+						varify.style.display = "inline";
+otp.style.display="none";
+						user.style.display = "none";
+						username.style.display = "none";
+						button.style.display = "none";
+
+					}
+					function myCancel4() {
+						let button = document.querySelector(".button4");
+						let user = document.querySelector(".phone");
+						let username = document.querySelector(".no");
+						var back = document.querySelector(".back");
+						let varify = document.querySelector(".varify");
+
+						let formgroup = document.querySelector(".form-group4");
+						formgroup.style.display = "none";
+						user.style.display = "inline";
+						username.style.display = "inline";
+						button.style.display = "inline";
+						back.style.display = "none";
+						varify.style.display = "none";
+					}
+					function myFunction5() {
+						let user = document.querySelector(".occu");
+						let username = document.querySelector(".pation");
+						let button = document.querySelector(".button5");
+
+						user.style.display = "none";
+						username.style.display = "none";
+						button.style.display = "none";
+					} function myCancel5() {
+						let button = document.querySelector(".button5");
+						let user = document.querySelector(".occu");
+						let username = document.querySelector(".pation");
+
+						let formgroup = document.querySelector(".form-group5");
+						formgroup.style.display = "none";
+						user.style.display = "inline";
+						username.style.display = "inline";
+						button.style.display = "inline";
+					}
+
+				</script>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card pad-15">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-4 col-4 name">Name</div>
+									<div class="col-md-6 col-6 name">Elangovan</div>
+
+
+									<div class="col-md-2 col"><span class="pull-right edit-name"><a href="#">
+												<button class="btn-selector button" onclick="myFunction()">
+													Edit
+												</button></a></span></div>
+									<div class="col-md-12">
+										<div class="form-group name-edit pt-3 mb-0" style="display:none;">
+											<label for="name">Name:</label>
+											<!--<input type="text" class="form-control" id="name" aria-describedby="" placeholder="Elangovan">-->
+											<div class="input-group mb-3">
+												<input type="text" class="form pt-2" placeholder="first-name"
+													aria-label="Elangovan" aria-describedby="basic-addon2">
+												<input type="text" class="form pt-2" placeholder="Last-name">
+												<div class="input-group-append">
+													<button class="btn btn-selector " onclick="myCancel()"
+														type="button">cancel</button>
+													<button class="btn btn-selector" type="button">Save Changes</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-4 mail">Email</div>
+									<div class="col-md-6 col-6 mail1">elango456@gmail.com</div>
+									<div class="col-md-2 col"><span class="pull-right edit-email"><a href="#"><button
+													class="btn-selector button1" onclick="myFunction1()">
+													Edit
+												</button></a></span></div>
+									<div class="col-md-12">
+										<div class="form-group form-group1 email-edit pt-3 mb-0" style="display:none;">
+											<label for="name">Email:</label>
+
+											<!--<input type="text" class="form-control" id="email" aria-describedby="" placeholder="elango456@gmail.com">-->
+											<div class="input-group mb-3">
+												<input type="text" class="form pt-2" placeholder="elango456@gmail.com"
+													aria-label="elango456@gmail.com" aria-describedby="basic-addon2">
+
+												<div class="input-group-append">
+													<button class="btn btn-selector" type="button"
+														onclick="myCancel1()">cancel</button>
+													<button class="btn btn-selector" type="button">Save Changes</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-4 user">Username</div>
+									<div class="col-md-6 col-6 user1">webelango</div>
+									<div class="col-md-2 col"><span class="pull-right edit-username"><a href="#"><button
+													class="btn-selector button2" onclick="myFunction2()">
+													Edit
+												</button></a></span></div>
+									<div class="col-md-12">
+										<div class="form-group form-group2 username-edit pt-3 mb-0"
+											style="display:none;">
+											<label for="name">Username:</label>
+											<!--<input type="text" class="form-control" id="name" aria-describedby="" placeholder="webelango">-->
+											<div class="input-group mb-3">
+												<input type="text" class="form pt-2" placeholder="webelango"
+													aria-label="webelango" aria-describedby="basic-addon2">
+												<div class="input-group-append">
+													<button class="btn btn-selector " type="button"
+														onclick="myCancel2()">cancel</button>
+													<button class="btn btn-selector" type="button">Save Changes</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-4 pass">Password</div>
+									<div class="col-md-6 col-6 word">******</div>
+									<div class="col-md-2 col"><span class="pull-right edit-password"><a href="#"><button
+													class="btn-selector button3" onclick="myFunction3()">
+													Edit
+												</button></a></span></div>
+									<div class="col-md-12">
+										<div class="form-group form-group3 password-edit pt-3 mb-0"
+											style="display:none;">
+											<label for="name">Password:</label>
+											<!--<input type="password" class="form-control" id="password" aria-describedby="" placeholder="******">-->
+											<div class="input-group mb-3">
+												<input type="password" class="form pt-2" placeholder="*******"
+													aria-label="webelango" aria-describedby="basic-addon2">
+												<div class="input-group-append">
+													<button class="btn btn-selector " type="button"
+														onclick="myCancel3()">cancel</button>
+													<button class="btn btn-selector " type="button">Save
+														changes</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-4 phone">Phone No</div>
+									<div class="col-md-6 col-6 no">9843463839</div>
+									<div class="col-md-2 col"><span class="pull-right edit-phno"><a href="#"><button
+													class="btn-selector button4" onclick="myFunction4()">
+													Edit
+												</button></a></span></div>
+									<div class="col-md-12">
+										<div class="form-group  form-group4 phno-edit pt-2 mb-0" style="display:none;">
+											<label for="name">Change Number:</label>
+											<!--<input type="number" class="form-control" id="phno-edit" aria-describedby="" placeholder="943463839">-->
+											<div class="input-group mb-3">
+												<!-- <label for="">Country code</label> -->
+
+												<!-- <div class="form-Group"> -->
+												<select name="country code" id="select" class="form2"
+													aria-placeholder="country code">
+													<option disabled selected value="">select country code(+1)</option>
+													<option data-countryCode="GB" value="44" Selected>UK (+44)</option>
+													<option data-countryCode="US" value="1">USA (+1)</option>
+
+													<option data-countryCode="DZ" value="213">Algeria (+213)</option>
+													<option data-countryCode="AD" value="376">Andorra (+376)</option>
+													<option data-countryCode="AO" value="244">Angola (+244)</option>
+													<option data-countryCode="AI" value="1264">Anguilla (+1264)</option>
+													<option data-countryCode="AG" value="1268">Antigua &amp; Barbuda
+														(+1268)</option>
+													<option data-countryCode="AR" value="54">Argentina (+54)</option>
+													<option data-countryCode="AM" value="374">Armenia (+374)</option>
+													<option data-countryCode="AW" value="297">Aruba (+297)</option>
+													<option data-countryCode="AU" value="61">Australia (+61)</option>
+													<option data-countryCode="AT" value="43">Austria (+43)</option>
+													<option data-countryCode="AZ" value="994">Azerbaijan (+994)</option>
+													<option data-countryCode="BS" value="1242">Bahamas (+1242)</option>
+													<option data-countryCode="BH" value="973">Bahrain (+973)</option>
+													<option data-countryCode="BD" value="880">Bangladesh (+880)</option>
+													<option data-countryCode="BB" value="1246">Barbados (+1246)</option>
+													<option data-countryCode="BY" value="375">Belarus (+375)</option>
+													<option data-countryCode="BE" value="32">Belgium (+32)</option>
+													<option data-countryCode="BZ" value="501">Belize (+501)</option>
+													<option data-countryCode="BJ" value="229">Benin (+229)</option>
+													<option data-countryCode="BM" value="1441">Bermuda (+1441)</option>
+													<option data-countryCode="BT" value="975">Bhutan (+975)</option>
+													<option data-countryCode="BO" value="591">Bolivia (+591)</option>
+													<option data-countryCode="BA" value="387">Bosnia Herzegovina (+387)
+													</option>
+													<option data-countryCode="BW" value="267">Botswana (+267)</option>
+													<option data-countryCode="BR" value="55">Brazil (+55)</option>
+													<option data-countryCode="BN" value="673">Brunei (+673)</option>
+													<option data-countryCode="BG" value="359">Bulgaria (+359)</option>
+													<option data-countryCode="BF" value="226">Burkina Faso (+226)
+													</option>
+													<option data-countryCode="BI" value="257">Burundi (+257)</option>
+													<option data-countryCode="KH" value="855">Cambodia (+855)</option>
+													<option data-countryCode="CM" value="237">Cameroon (+237)</option>
+													<option data-countryCode="CA" value="1">Canada (+1)</option>
+													<option data-countryCode="CV" value="238">Cape Verde Islands (+238)
+													</option>
+													<option data-countryCode="KY" value="1345">Cayman Islands (+1345)
+													</option>
+													<option data-countryCode="CF" value="236">Central African Republic
+														(+236)</option>
+													<option data-countryCode="CL" value="56">Chile (+56)</option>
+													<option data-countryCode="CN" value="86">China (+86)</option>
+													<option data-countryCode="CO" value="57">Colombia (+57)</option>
+													<option data-countryCode="KM" value="269">Comoros (+269)</option>
+													<option data-countryCode="CG" value="242">Congo (+242)</option>
+													<option data-countryCode="CK" value="682">Cook Islands (+682)
+													</option>
+													<option data-countryCode="CR" value="506">Costa Rica (+506)</option>
+													<option data-countryCode="HR" value="385">Croatia (+385)</option>
+													<option data-countryCode="CU" value="53">Cuba (+53)</option>
+													<option data-countryCode="CY" value="90392">Cyprus North (+90392)
+													</option>
+													<option data-countryCode="CY" value="357">Cyprus South (+357)
+													</option>
+													<option data-countryCode="CZ" value="42">Czech Republic (+42)
+													</option>
+													<option data-countryCode="DK" value="45">Denmark (+45)</option>
+													<option data-countryCode="DJ" value="253">Djibouti (+253)</option>
+													<option data-countryCode="DM" value="1809">Dominica (+1809)</option>
+													<option data-countryCode="DO" value="1809">Dominican Republic
+														(+1809)</option>
+													<option data-countryCode="EC" value="593">Ecuador (+593)</option>
+													<option data-countryCode="EG" value="20">Egypt (+20)</option>
+													<option data-countryCode="SV" value="503">El Salvador (+503)
+													</option>
+													<option data-countryCode="GQ" value="240">Equatorial Guinea (+240)
+													</option>
+													<option data-countryCode="ER" value="291">Eritrea (+291)</option>
+													<option data-countryCode="EE" value="372">Estonia (+372)</option>
+													<option data-countryCode="ET" value="251">Ethiopia (+251)</option>
+													<option data-countryCode="FK" value="500">Falkland Islands (+500)
+													</option>
+													<option data-countryCode="FO" value="298">Faroe Islands (+298)
+													</option>
+													<option data-countryCode="FJ" value="679">Fiji (+679)</option>
+													<option data-countryCode="FI" value="358">Finland (+358)</option>
+													<option data-countryCode="FR" value="33">France (+33)</option>
+													<option data-countryCode="GF" value="594">French Guiana (+594)
+													</option>
+													<option data-countryCode="PF" value="689">French Polynesia (+689)
+													</option>
+													<option data-countryCode="GA" value="241">Gabon (+241)</option>
+													<option data-countryCode="GM" value="220">Gambia (+220)</option>
+													<option data-countryCode="GE" value="7880">Georgia (+7880)</option>
+													<option data-countryCode="DE" value="49">Germany (+49)</option>
+													<option data-countryCode="GH" value="233">Ghana (+233)</option>
+													<option data-countryCode="GI" value="350">Gibraltar (+350)</option>
+													<option data-countryCode="GR" value="30">Greece (+30)</option>
+													<option data-countryCode="GL" value="299">Greenland (+299)</option>
+													<option data-countryCode="GD" value="1473">Grenada (+1473)</option>
+													<option data-countryCode="GP" value="590">Guadeloupe (+590)</option>
+													<option data-countryCode="GU" value="671">Guam (+671)</option>
+													<option data-countryCode="GT" value="502">Guatemala (+502)</option>
+													<option data-countryCode="GN" value="224">Guinea (+224)</option>
+													<option data-countryCode="GW" value="245">Guinea - Bissau (+245)
+													</option>
+													<option data-countryCode="GY" value="592">Guyana (+592)</option>
+													<option data-countryCode="HT" value="509">Haiti (+509)</option>
+													<option data-countryCode="HN" value="504">Honduras (+504)</option>
+													<option data-countryCode="HK" value="852">Hong Kong (+852)</option>
+													<option data-countryCode="HU" value="36">Hungary (+36)</option>
+													<option data-countryCode="IS" value="354">Iceland (+354)</option>
+													<option data-countryCode="IN" value="91">India (+91)</option>
+													<option data-countryCode="ID" value="62">Indonesia (+62)</option>
+													<option data-countryCode="IR" value="98">Iran (+98)</option>
+													<option data-countryCode="IQ" value="964">Iraq (+964)</option>
+													<option data-countryCode="IE" value="353">Ireland (+353)</option>
+													<option data-countryCode="IL" value="972">Israel (+972)</option>
+													<option data-countryCode="IT" value="39">Italy (+39)</option>
+													<option data-countryCode="JM" value="1876">Jamaica (+1876)</option>
+													<option data-countryCode="JP" value="81">Japan (+81)</option>
+													<option data-countryCode="JO" value="962">Jordan (+962)</option>
+													<option data-countryCode="KZ" value="7">Kazakhstan (+7)</option>
+													<option data-countryCode="KE" value="254">Kenya (+254)</option>
+													<option data-countryCode="KI" value="686">Kiribati (+686)</option>
+													<option data-countryCode="KP" value="850">Korea North (+850)
+													</option>
+													<option data-countryCode="KR" value="82">Korea South (+82)</option>
+													<option data-countryCode="KW" value="965">Kuwait (+965)</option>
+													<option data-countryCode="KG" value="996">Kyrgyzstan (+996)</option>
+													<option data-countryCode="LA" value="856">Laos (+856)</option>
+													<option data-countryCode="LV" value="371">Latvia (+371)</option>
+													<option data-countryCode="LB" value="961">Lebanon (+961)</option>
+													<option data-countryCode="LS" value="266">Lesotho (+266)</option>
+													<option data-countryCode="LR" value="231">Liberia (+231)</option>
+													<option data-countryCode="LY" value="218">Libya (+218)</option>
+													<option data-countryCode="LI" value="417">Liechtenstein (+417)
+													</option>
+													<option data-countryCode="LT" value="370">Lithuania (+370)</option>
+													<option data-countryCode="LU" value="352">Luxembourg (+352)</option>
+													<option data-countryCode="MO" value="853">Macao (+853)</option>
+													<option data-countryCode="MK" value="389">Macedonia (+389)</option>
+													<option data-countryCode="MG" value="261">Madagascar (+261)</option>
+													<option data-countryCode="MW" value="265">Malawi (+265)</option>
+													<option data-countryCode="MY" value="60">Malaysia (+60)</option>
+													<option data-countryCode="MV" value="960">Maldives (+960)</option>
+													<option data-countryCode="ML" value="223">Mali (+223)</option>
+													<option data-countryCode="MT" value="356">Malta (+356)</option>
+													<option data-countryCode="MH" value="692">Marshall Islands (+692)
+													</option>
+													<option data-countryCode="MQ" value="596">Martinique (+596)</option>
+													<option data-countryCode="MR" value="222">Mauritania (+222)</option>
+													<option data-countryCode="YT" value="269">Mayotte (+269)</option>
+													<option data-countryCode="MX" value="52">Mexico (+52)</option>
+													<option data-countryCode="FM" value="691">Micronesia (+691)</option>
+													<option data-countryCode="MD" value="373">Moldova (+373)</option>
+													<option data-countryCode="MC" value="377">Monaco (+377)</option>
+													<option data-countryCode="MN" value="976">Mongolia (+976)</option>
+													<option data-countryCode="MS" value="1664">Montserrat (+1664)
+													</option>
+													<option data-countryCode="MA" value="212">Morocco (+212)</option>
+													<option data-countryCode="MZ" value="258">Mozambique (+258)</option>
+													<option data-countryCode="MN" value="95">Myanmar (+95)</option>
+													<option data-countryCode="NA" value="264">Namibia (+264)</option>
+													<option data-countryCode="NR" value="674">Nauru (+674)</option>
+													<option data-countryCode="NP" value="977">Nepal (+977)</option>
+													<option data-countryCode="NL" value="31">Netherlands (+31)</option>
+													<option data-countryCode="NC" value="687">New Caledonia (+687)
+													</option>
+													<option data-countryCode="NZ" value="64">New Zealand (+64)</option>
+													<option data-countryCode="NI" value="505">Nicaragua (+505)</option>
+													<option data-countryCode="NE" value="227">Niger (+227)</option>
+													<option data-countryCode="NG" value="234">Nigeria (+234)</option>
+													<option data-countryCode="NU" value="683">Niue (+683)</option>
+													<option data-countryCode="NF" value="672">Norfolk Islands (+672)
+													</option>
+													<option data-countryCode="NP" value="670">Northern Marianas (+670)
+													</option>
+													<option data-countryCode="NO" value="47">Norway (+47)</option>
+													<option data-countryCode="OM" value="968">Oman (+968)</option>
+													<option data-countryCode="PW" value="680">Palau (+680)</option>
+													<option data-countryCode="PA" value="507">Panama (+507)</option>
+													<option data-countryCode="PG" value="675">Papua New Guinea (+675)
+													</option>
+													<option data-countryCode="PY" value="595">Paraguay (+595)</option>
+													<option data-countryCode="PE" value="51">Peru (+51)</option>
+													<option data-countryCode="PH" value="63">Philippines (+63)</option>
+													<option data-countryCode="PL" value="48">Poland (+48)</option>
+													<option data-countryCode="PT" value="351">Portugal (+351)</option>
+													<option data-countryCode="PR" value="1787">Puerto Rico (+1787)
+													</option>
+													<option data-countryCode="QA" value="974">Qatar (+974)</option>
+													<option data-countryCode="RE" value="262">Reunion (+262)</option>
+													<option data-countryCode="RO" value="40">Romania (+40)</option>
+													<option data-countryCode="RU" value="7">Russia (+7)</option>
+													<option data-countryCode="RW" value="250">Rwanda (+250)</option>
+													<option data-countryCode="SM" value="378">San Marino (+378)</option>
+													<option data-countryCode="ST" value="239">Sao Tome &amp; Principe
+														(+239)</option>
+													<option data-countryCode="SA" value="966">Saudi Arabia (+966)
+													</option>
+													<option data-countryCode="SN" value="221">Senegal (+221)</option>
+													<option data-countryCode="CS" value="381">Serbia (+381)</option>
+													<option data-countryCode="SC" value="248">Seychelles (+248)</option>
+													<option data-countryCode="SL" value="232">Sierra Leone (+232)
+													</option>
+													<option data-countryCode="SG" value="65">Singapore (+65)</option>
+													<option data-countryCode="SK" value="421">Slovak Republic (+421)
+													</option>
+													<option data-countryCode="SI" value="386">Slovenia (+386)</option>
+													<option data-countryCode="SB" value="677">Solomon Islands (+677)
+													</option>
+													<option data-countryCode="SO" value="252">Somalia (+252)</option>
+													<option data-countryCode="ZA" value="27">South Africa (+27)</option>
+													<option data-countryCode="ES" value="34">Spain (+34)</option>
+													<option data-countryCode="LK" value="94">Sri Lanka (+94)</option>
+													<option data-countryCode="SH" value="290">St. Helena (+290)</option>
+													<option data-countryCode="KN" value="1869">St. Kitts (+1869)
+													</option>
+													<option data-countryCode="SC" value="1758">St. Lucia (+1758)
+													</option>
+													<option data-countryCode="SD" value="249">Sudan (+249)</option>
+													<option data-countryCode="SR" value="597">Suriname (+597)</option>
+													<option data-countryCode="SZ" value="268">Swaziland (+268)</option>
+													<option data-countryCode="SE" value="46">Sweden (+46)</option>
+													<option data-countryCode="CH" value="41">Switzerland (+41)</option>
+													<option data-countryCode="SI" value="963">Syria (+963)</option>
+													<option data-countryCode="TW" value="886">Taiwan (+886)</option>
+													<option data-countryCode="TJ" value="7">Tajikstan (+7)</option>
+													<option data-countryCode="TH" value="66">Thailand (+66)</option>
+													<option data-countryCode="TG" value="228">Togo (+228)</option>
+													<option data-countryCode="TO" value="676">Tonga (+676)</option>
+													<option data-countryCode="TT" value="1868">Trinidad &amp; Tobago
+														(+1868)</option>
+													<option data-countryCode="TN" value="216">Tunisia (+216)</option>
+													<option data-countryCode="TR" value="90">Turkey (+90)</option>
+													<option data-countryCode="TM" value="7">Turkmenistan (+7)</option>
+													<option data-countryCode="TM" value="993">Turkmenistan (+993)
+													</option>
+													<option data-countryCode="TC" value="1649">Turks &amp; Caicos
+														Islands (+1649)</option>
+													<option data-countryCode="TV" value="688">Tuvalu (+688)</option>
+													<option data-countryCode="UG" value="256">Uganda (+256)</option>
+													<!-- <option data-countryCode="GB" value="44">UK (+44)</option> -->
+													<option data-countryCode="UA" value="380">Ukraine (+380)</option>
+													<option data-countryCode="AE" value="971">United Arab Emirates
+														(+971)</option>
+													<option data-countryCode="UY" value="598">Uruguay (+598)</option>
+													<!-- <option data-countryCode="US" value="1">USA (+1)</option> -->
+													<option data-countryCode="UZ" value="7">Uzbekistan (+7)</option>
+													<option data-countryCode="VU" value="678">Vanuatu (+678)</option>
+													<option data-countryCode="VA" value="379">Vatican City (+379)
+													</option>
+													<option data-countryCode="VE" value="58">Venezuela (+58)</option>
+													<option data-countryCode="VN" value="84">Vietnam (+84)</option>
+													<option data-countryCode="VG" value="84">Virgin Islands - British
+														(+1284)</option>
+													<option data-countryCode="VI" value="84">Virgin Islands - US (+1340)
+													</option>
+													<option data-countryCode="WF" value="681">Wallis &amp; Futuna (+681)
+													</option>
+													<option data-countryCode="YE" value="969">Yemen (North)(+969)
+													</option>
+													<option data-countryCode="YE" value="967">Yemen (South)(+967)
+													</option>
+													<option data-countryCode="ZM" value="260">Zambia (+260)</option>
+													<option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
+
+												</select>
+												<!-- </div> -->
+
+												<input type="password" class=" pt-2 form2" placeholder="943463839"
+													aria-label="943463839" value="" aria-describedby="basic-addon2">
+												<button class="review" onclick="myReview()">Review</button>
+												<!-- <div class="back" style="display:none">
+													<input type="text" id="otp-field" style="display:none"
+														placeholder="Enter OTP" />
+
+												</div> -->
+											<div class="digit-group1">
+												<label style="font-weight: 500; margin:7px" for="">Verify Otp</label>
+									<div class="digit-group">
+										
+
+										<input type="text" id="digit-1" class="input" name="digit-1"
+										data-next="digit-2" />
+									<input type="text" id="digit-2" class="input" name="digit-2" data-next="digit-3"
+										data-previous="digit-1" />
+									<input type="text" id="digit-3" class="input" name="digit-3" data-next="digit-4"
+										data-previous="digit-2" />
+									<span class="splitter">&ndash;</span>
+									<input type="text" id="digit-4" class="input" name="digit-4" data-next="digit-5"
+										data-previous="digit-3" />
+									<input type="text" id="digit-5" class="input" name="digit-5" data-next="digit-6"
+										data-previous="digit-4" />
+									<input type="text" id="digit-6" class="input" name="digit-6"
+										data-previous="digit-5" />
+ 
+									</div>
+									<!-- <label for="name" class="varify">Verify</label> -->
+
+														<div class="">
+															<button class="btn btn-selector" type="button"
+																onclick="myCancel4()">cancel</button>
+															<button class="btn btn-selector " type="button">Submit</button>
+														</div>
+
+
+										</div>
+										
+
+
+
+
+
+
+												<!-- <div class="input-group-append">
+													<button class="btn btn-selector" type="button"
+														onclick="myCancel4()">cancel</button>
+													<button class="btn btn-selector " type="button">Submit</button>
+												</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-4 occu">Occupation</div>
+									<div class="col-md-6 col-6 pation">Artizt</div>
+									<div class="col-md-2 col"><span class="pull-right edit-occupation"><a
+												href="#"><button class="btn-selector button5" onclick="myFunction5()">
+													Edit
+												</button></a></span></div>
+									<div class="col-md-12">
+										<div class="form-group form-group5 occupation-edit pt-2 mb-0"
+											style="display:none;">
+											<label for="name">Occupation:</label>
+											<!--<select class="form-control">
+            							    	    <option value="">Select Occupation</option>
+            							    	    <option value="Artizt" selected>Artizt</option>
+            							    	    <option value="Singer">Singer</option>
+            							    	    <option value="Dancer">Dancer</option>
+            							    	</select>-->
+
+											<div class="input-group mb-3">
+												<select class="form">
+													<option value="">Select Occupation</option>
+													<option value="Artizt" selected>Artizt</option>
+													<option value="Singer">Singer</option>
+													<option value="Dancer">Dancer</option>
+												</select>
+												<div class="input-group-append">
+													<button class="btn btn-selector" type="button"
+														onclick="myCancel5()">cancel</button>
+													<button class="btn btn-selector " type="button">save
+														changes</button>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="account-created">
+				<div class="row">
+					<div class="col-md-12 pad-bot-15 pad-top-70 page-head">
+						<h2 class="text-black">Account Created</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card pad-15">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-4 col-4">Name</div>
+									<div class="col-md-6 col-6">Elangovan</div>
+									<div class="col-md-2 col-2"><span class="pull-right"><a href="#"><button
+													class="btn-selector button" onclick="myFunction()">
+													Edit
+												</button></a></span>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-4">Account Created By</div>
+									<div class="col-md-6 col-6">Admin</div>
+									<div class="col-md-2 col-2"><span class="pull-right"><a href="#"><button
+													class="btn-selector button" onclick="myFunction()">
+													Edit
+												</button></a></span>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="my-devices">
+				<div class="row">
+					<div class="col-md-12 pad-bot-15 pad-top-70 page-head">
+						<h2 class="text-black">My Devices</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card pad-15">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="devices-settigns">
+											<img src="images/computer-settings.png" class="img-fluid" />
+											<p class="text-dark mb-0 mt-1">Windows PC · Coimbatore, India</p>
+											<p class="text-dark mb-2 mt-0">Chrome <b class="active-text">Active now</b>
+											</p>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+									<div class="col-md-12">
+										<div class="devices-settigns">
+											<img src="images/laptop-settings.png" class="img-fluid" />
+											<p class="text-dark mb-0 mt-1">Laptop · Coimbatore, India</p>
+											<p class="text-dark mb-2 mt-0">Chrome <b class="deactive-text">Active
+													now</b></p>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+									<div class="col-md-12">
+										<div class="devices-settigns">
+											<img src="images/smartphone-settings.png" class="img-fluid" />
+											<p class="text-dark mb-0 mt-1">Mobile · Galaxy A70s</p>
+											<p class="text-dark mb-2 mt-0">Chrome <b class="active-text">Active now</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="lastsigned">
+				<div class="row">
+					<div class="col-md-12 pad-bot-15 pad-top-70 page-head">
+						<h2 class="text-black">Last Signed In</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card pad-15">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-12">
+										<p class="mb-0">Last login : 28-July-2022 10:30 AM</p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="viewpermission">
+				<div class="row">
+					<div class="col-md-12 pad-bot-15 pad-top-70 page-head">
+						<h2 class="text-black">View Permissions</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card pad-15">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-4 col-4">Profile View</div>
+									<div class="col-md-6 col-6">Allow</div>
+									<div class="col-md-2 col-2"><span class="pull-right edit-occupation"><a
+												href="javascript:(0);">Edit</a></span></div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-4">Project View</div>
+									<div class="col-md-6 col-6">Allow</div>
+									<div class="col-md-2 col-2"><span class="pull-right edit-occupation"><a
+												href="javascript:(0);">Edit</a></span></div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-4">Store View</div>
+									<div class="col-md-6 col-6">Allow</div>
+									<div class="col-md-2 col-2"><span class="pull-right edit-occupation"><a
+												href="javascript:(0);">Edit</a></span></div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-4">FnC</div>
+									<div class="col-md-6 col-6">Allow</div>
+									<div class="col-md-2 col-2"><span class="pull-right edit-occupation"><a
+												href="javascript:(0);">Edit</a></span></div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-4">Post and Feeds</div>
+									<div class="col-md-6 col-6">Allow</div>
+									<div class="col-md-2 col-2"><span class="pull-right edit-occupation"><a
+												href="javascript:(0);">Edit</a></span></div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="review-comments">
+				<div class="row">
+					<div class="col-md-12 pad-bot-15 pad-top-70 page-head">
+						<h2 class="text-black">Review And Comment Permission</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card pad-15">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-4 col-4">Review And Comment Permission</div>
+									<div class="col-md-6 col-6">Allow</div>
+									<div class="col-md-2 col-2"><span class="pull-right edit-occupation"><a
+												href="javascript:(0);">Edit</a></span></div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="tag-permissions">
+				<div class="row">
+					<div class="col-md-12 pad-bot-15 pad-top-70 page-head">
+						<h2 class="text-black">Tag Permissions</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card pad-15">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-4 col-4">Tag Permissions</div>
+									<div class="col-md-6 col-6">Allow</div>
+									<div class="col-md-2 col-2"><span class="pull-right edit-occupation"><a
+												href="javascript:(0);">Edit</a></span></div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="contact-permissions">
+				<div class="row">
+					<div class="col-md-12 pad-bot-15 pad-top-70 page-head">
+						<h2 class="text-black">Contact Permissions:</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card pad-15">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-4 col-4">Message</div>
+									<div class="col-md-6 col-6">Allow</div>
+									<div class="col-md-2 col-2"><span class="pull-right edit-occupation"><a
+												href="javascript:(0);">Edit</a></span></div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<hr />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-4">Call</div>
+									<div class="col-md-6 col-6">Allow</div>
+									<div class="col-md-2 col-2"><span class="pull-right edit-occupation"><a
+												href="javascript:(0);">Edit</a></span></div>
+									<div class="col-md-12">
+										<div class="form-group occupation-edit pt-2 mb-0" style="display:none;">
+											<select class="form-control">
+												<option value="">Select Occupation</option>
+												<option value="Artizt" selected>Artizt</option>
+												<option value="Singer">Singer</option>
+												<option value="Dancer">Dancer</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="blockedusers">
+				<div class="row">
+					<div class="col-md-12 pad-bot-15 pad-top-70 page-head">
+						<h2 class="text-black">Blocked Users:</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card pad-15">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-4 blockusers">
+										<div class="blockusers_div"><img src="images/dhanush.png"
+												class="img-fluid round-radius">
+											<h4>Dhanush</h4>
+										</div>
+										<a href="#"
+											class="btn btn-select pt-2 ft-12 mt-0 border-radius-10 pull-right">Unblock</a>
+									</div>
+									<div class="col-md-4 blockusers">
+										<div class="blockusers_div"><img src="images/dhanush.png"
+												class="img-fluid round-radius">
+											<h4>Dhanush</h4>
+										</div>
+										<a href="#"
+											class="btn btn-select pt-2 ft-12 mt-0 border-radius-10 pull-right">Unblock</a>
+									</div>
+									<div class="col-md-4 blockusers">
+										<div class="blockusers_div"><img src="images/dhanush.png"
+												class="img-fluid round-radius">
+											<h4>Dhanush</h4>
+										</div>
+										<a href="#"
+											class="btn btn-select pt-2 ft-12 mt-0 border-radius-10 pull-right">Unblock</a>
+									</div>
+									<div class="col-md-4 blockusers">
+										<div class="blockusers_div"><img src="images/dhanush.png"
+												class="img-fluid round-radius">
+											<h4>Dhanush</h4>
+										</div>
+										<a href="#"
+											class="btn btn-select pt-2 ft-12 mt-0 border-radius-10 pull-right">Unblock</a>
+									</div>
+
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="spamreports">
+				<div class="row">
+					<div class="col-md-12 pad-bot-15 pad-top-70 page-head">
+						<h2 class="text-black">Spam Reports:</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card pad-15">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-12">
+										<p class="ft-14 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <?php include 'includes/footer.php';?> -->
+
+	<!-- <footer class="bg-white pad-top-15 pad-bot-15 mar-top-20">
+		<div class="container">
+			<div class="row align-items-center justify-content">
+				<div class="col-sm-2 text-xs-center">
+				  <img src="images/logo.svg" class="img-fluid" width="95">
+				</div>
+				<div class="col-sm-5 text-xs-center">
+				  <p class="copyright pad-top-15">&copy; Artizt Network Ltd. <script>document.write((new Date()).getFullYear());</script></p>
+				</div>
+				<div class="col-sm-5 social-media-link text-right text-xs-center justify-content-lg-end">                 
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>                    
+				</div>
+			</div>
+		</div>
+	</footer> -->
+
+
+	<div class="modal fade" id="hireus" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header b-modal-header text-center">
+					<h5 class="modal-title" id="exampleModalLongTitle">Hire Us</h5>
+					<button type="button" class="close modelclose_btn" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<form action="#">
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-10 text-center">
+								<p class="text-dark ft-16">Sharing more details will increase your chancens of receiving
+									a reply</p>
+							</div>
+						</div>
+						<div class="popup_form">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<!--<label for="companyname">Company Name:</label>-->
+										<input type="text" class="form-control big_box" id="companyname"
+											aria-describedby="emailHelp" placeholder="Company Name">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<!--<label for="hirefor">Hire for:</label>-->
+										<select class="form-control big_box" id="hirefor" placeholder="Select Hire for">
+											<option value="">Select Hire for</option>
+											<option value="Full Time Job">Full Time Job</option>
+											<option value="Part Time Job">Part Time Job</option>
+											<option value="Freelance">Freelance</option>
+											<option value="Project Based">Project Based</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<!--<label for="budget">Budget (&#8377;):</label>-->
+										<input type="text" class="form-control big_box" id="budget"
+											aria-describedby="emailHelp" placeholder="Budget (&#8377;)">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<!--<label for="hirefor">Time line:</label>-->
+										<select class="form-control big_box" id="hirefor" placeholder="Time line">
+											<option value="">Select Time line</option>
+											<option value="Within next 3 months">Within next 15 days</option>
+											<option value="Within next 3 months">Within next 30 days</option>
+											<option value="Within next 3 months">Within next 3 months</option>
+											<option value="Within next 3 months">Within next 6 months</option>
+											<option value="Within next 3 months">Within next 1 Year</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<!--<label for="msg">Message:</label>-->
+										<textarea class="big_box msg-border-box" placeholder="Message"
+											id="msg"></textarea>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer d-block text-center">
+							<button type="submit" class="btn btn-select border-radius-30 pt-2 pb-2 w-150">Send
+								Enquiry</button>
+						</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+<!-- <?php include 'includes/script.php';?> -->
+
+<style>
+	.notification_dropdown .left_dropdown,
+	.others-profile-right .os_dropdown .left_dropdown {
+		left: 20px !important;
+		right: auto !important;
+	}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+	integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+	integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+	crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+	integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+	crossorigin="anonymous"></script>
+
+<script src="js/jquery.countup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://use.fontawesome.com/9ad0804c94.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.0.0/rellax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+	integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+	integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="js/aos.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+	integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+	crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+	integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+	crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+	integrity=" sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+	crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="dist/js/pignose.calendar.full.js"></script>
+<script src="mscroll/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+	function openNav() {
+		//document.getElementById("mySidenav").style.display = "block";
+		$("#mySidenav").show("fast");
+		$(".floating-menu").hide();
+		$(".closebtn").show();
+	}
+
+	function closeNav() {
+		//document.getElementById("mySidenav").style.display = "none";
+		$("#mySidenav").hide("fast");
+		$(".floating-menu").show();
+		$(".closebtn").hide();
+	}
+
+	$(document).ready(function () {
+
+		$('[data-toggle="tooltip"]').tooltip();
+
+		$('.dmenu').hover(function () {
+			$(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+		}, function () {
+			$(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+		});
+	});
+
+	$(document).ready(function () {
+		$(".megamenu").on("click", function (e) {
+			e.stopPropagation();
+		});
+	});
+</script>
+
+
+
+
+<script>
+	$('ul.nav li.dropdown').hover(function () {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, function () {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});
+
+	$(init);
+
+	function init() {
+		$(".droppable-area").sortable({
+			connectWith: ".connected-sortable",
+			stack: '.connected-sortable ul'
+		}).disableSelection();
+	}	
+</script>
+<script>
+
+	$(function () {
+		$('.calendar').pignoseCalendar();
+	});
+
+	$(document).ready(function (e) {
+		"use strict";
+		$('.search-panel').each(function () {
+			var to = $(this).data('search').toString();
+			var text = $(this).find('[data-search="' + to + '"]').html();
+			$(this).find('button span.search_by').html(text);
+		});
+
+		$('.search-panel li a').on('click', function (e) {
+			var sp = $(this).closest('.search-panel');
+			var to = $(this).html();
+			var text = $(this).html();
+			sp.data('search', to);
+			console.log(sp.find('.search_by'));
+			sp.find('button span.search_by').html(text);
+		});
+
+		$(".advance-search-btn").click(function () {
+			$(".advance-search").toggleClass("show");
+			$(this).toggleClass("active");
+		});
+
+		$(".widget-close").click(function () {
+			$(this).closest('.draggable-item').hide();
+		});
+
+		$("#show-comment").click(function () {
+			$(".add-comment").toggle('slow');
+		});
+
+		$("#replay").click(function () {
+			$("#show-replay").toggle('slow');
+		});
+
+		$("#replayOne").click(function () {
+			$("#show-replayOne").toggle('slow');
+		});
+
+		$("#repalyTwo").click(function () {
+			$("#show-replayTwo").toggle('slow');
+		});
+
+		$('.counter').countUp({
+			delay: 50,
+			time: 5000
+		});
+
+	});
+</script>
+
+<script>
+
+
+
+	$('.ad-scroll').slick({
+		slidesToScroll: 1,
+		infinite: true,
+		slidesToShow: 1,
+		autoplay: true,
+		dots: true,
+		arrows: false,
+		autoplaySpeed: 4000,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+				}
+			},
+			{
+				breakpoint: 680,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+				}
+			},
+		]
+	});
+
+
+</script>
+<script>
+	function openNav() {
+		//document.getElementById("mySidenav").style.display = "block";
+		$("#mySidenav").show("fast");
+		$(".leftmenu_open").hide("fast");
+		$(".closebtn").show("fast");
+	}
+
+	$(function () {
+		$(".edit-name").on('click', function (e) {
+			$(".name-edit").toggle();
+		});
+		$(".edit-email").on('click', function (e) {
+			$(".email-edit").toggle();
+		});
+		$(".edit-username").on('click', function (e) {
+			$(".username-edit").toggle();
+		});
+		$(".edit-password").on('click', function (e) {
+			$(".password-edit").toggle();
+		});
+		$(".edit-phno").on('click', function (e) {
+			$(".phno-edit").toggle();
+		});
+		$(".edit-occupation").on('click', function (e) {
+			$(".occupation-edit").toggle();
+		});
+
+	});
+
+
+	function closeNav() {
+		//document.getElementById("mySidenav").style.display = "none";
+		$("#mySidenav").hide("fast");
+		$(".leftmenu_open").show("fast");
+		$(".closebtn").hide("fast");
+	}
+
+	$(document).ready(function () {
+		$("#searchbox").click(function () {
+			$("#mobilesearchmenu").toggle();
+		});
+	});
+
+</script>
+
+<script>
+	
+
+$('.digit-group').find('input').each(function() {
+	$(this).attr('maxlength', 1);
+	$(this).on('keyup', function(e) {
+		var parent = $($(this).parent());
+		
+		if(e.keyCode === 8 || e.keyCode === 37) {
+			var prev = parent.find('input#' + $(this).data('previous'));
+			
+			if(prev.length) {
+				$(prev).select();
+			}
+		} else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+			var next = parent.find('input#' + $(this).data('next'));
+			
+			if(next.length) {
+				$(next).select();
+			} else {
+				if(parent.data('autosubmit')) {
+					parent.submit();
+				}
+			}
+		}
+	});
+});
+
+</script>
+
+</html>

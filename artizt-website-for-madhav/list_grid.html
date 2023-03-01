@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        margin: 15px auto;
+        max-width: 860px;
+        /* /* background-color: #ffffff; */
+
+        background-color:#ffffff;
+        border: 1px solid #ccc;
+        padding: 20px 30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 6px;
+        /* color: #ffff; */
+        /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    }
+
+    .tog {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        font-weight: 400;
+        font-size: 25px;
+        margin: auto;
+        line-height: 13px;
+        /* border-radius: 3px; */
+    }
+
+    .but {
+        width: 85px;
+        height: 35px;
+        margin-top: 30px;
+        border: 1px solid #3a3535cc;
+        list-style: none;
+        font-size: 17px;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .grid {
+        display: none;
+        font-size: 21px;
+
+    }
+
+    .grid-template-columns {
+        display: grid;
+        grid-template-columns: repeat(3, 260px);
+        /* set your desired column sizes here */
+    }
+
+    .icon {
+        display: flex;
+        width: 160px;
+    }
+
+    .icon img {
+        /* border: 1px solid red; */
+        /* width: 10%; */
+        margin-right: 10px !important;
+        margin: auto;
+        /* margin-left: 60px; */
+
+    }
+</style>
+
+<body>
+
+
+
+
+    <div class="container">
+
+        <div>
+            <div class="tog">
+                <div class="icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/9125/9125957.png" width="30" height="30"
+                        alt="Left arrow free icon" title="Left arrow free icon">
+
+                    <div>
+                        <p>Explore</p>
+                        <h4>ArtiztZone</h4>
+                    </div>
+
+                </div>
+                <div class="but">
+                    <li class="grid"><i><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                width="23" height="23" x="0" y="0" viewBox="0 0 24 24"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <rect width="10" height="10" x="1" y="1" rx="3" fill="#000000"
+                                        data-original="#000000" class=""></rect>
+                                    <rect width="10" height="10" x="13" y="1" rx="3" fill="#000000"
+                                        data-original="#000000" class=""></rect>
+                                    <rect width="10" height="10" x="1" y="13" rx="3" fill="#000000"
+                                        data-original="#000000" class=""></rect>
+                                    <rect width="10" height="10" x="13" y="13" rx="3" fill="#000000"
+                                        data-original="#000000" class=""></rect>
+                                </g>
+                            </svg></i>
+                        <p> grid</p>
+                    </li>
+                    <li class="list">
+                        <p> list</p><i><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                width="23" height="23" x="0" y="0" viewBox="0 0 512.18 512.18"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <path
+                                        d="M448.18 80h-320c-17.673 0-32 14.327-32 32s14.327 32 32 32h320c17.673 0 32-14.327 32-32s-14.327-32-32-32zM64.18 112a32.004 32.004 0 0 0-9.44-22.56c-12.481-12.407-32.639-12.407-45.12 0A31.996 31.996 0 0 0 .18 112a27.243 27.243 0 0 0 0 6.24 28.851 28.851 0 0 0 1.76 6.08 37.139 37.139 0 0 0 3.04 5.44 29.275 29.275 0 0 0 4 4.96 28.322 28.322 0 0 0 4.8 3.84 26.073 26.073 0 0 0 5.44 3.04 26.412 26.412 0 0 0 6.72 2.4 28.06 28.06 0 0 0 6.24 0 31.999 31.999 0 0 0 22.56-9.28 29.275 29.275 0 0 0 4-4.96 37.139 37.139 0 0 0 3.04-5.44 29.714 29.714 0 0 0 2.4-6.08 27.243 27.243 0 0 0 0-6.24zM64.18 256a27.356 27.356 0 0 0 0-6.24 25.927 25.927 0 0 0-2.4-5.92 31.985 31.985 0 0 0-3.04-5.6 23.044 23.044 0 0 0-4-4.8c-12.481-12.407-32.639-12.407-45.12 0A31.996 31.996 0 0 0 .18 256a35.512 35.512 0 0 0 2.4 12.32 35.802 35.802 0 0 0 2.88 5.44 30.727 30.727 0 0 0 4.16 4.8 23.363 23.363 0 0 0 4.8 4 25.958 25.958 0 0 0 5.44 3.04 27.212 27.212 0 0 0 6.08 1.76c2.047.459 4.142.674 6.24.64 2.073.239 4.167.239 6.24 0a25.968 25.968 0 0 0 5.92-1.76 26.72 26.72 0 0 0 5.6-3.04 23.363 23.363 0 0 0 4.8-4 23.363 23.363 0 0 0 4-4.8 25.73 25.73 0 0 0 3.04-5.44 27.07 27.07 0 0 0 2.4-6.72 26.473 26.473 0 0 0 0-6.24zM64.18 400a27.471 27.471 0 0 0 0-6.24 27.238 27.238 0 0 0-2.4-6.08 37.139 37.139 0 0 0-3.04-5.44 23.363 23.363 0 0 0-4-4.8c-12.481-12.407-32.639-12.407-45.12 0a23.363 23.363 0 0 0-4 4.8 37.139 37.139 0 0 0-3.04 5.44 26.224 26.224 0 0 0-1.76 6.08A27.499 27.499 0 0 0 .18 400a32.004 32.004 0 0 0 9.44 22.56 23.363 23.363 0 0 0 4.8 4 25.958 25.958 0 0 0 5.44 3.04 27.212 27.212 0 0 0 6.08 1.76c2.047.459 4.142.674 6.24.64 2.073.239 4.167.239 6.24 0a25.968 25.968 0 0 0 5.92-1.76 26.72 26.72 0 0 0 5.6-3.04 23.363 23.363 0 0 0 4.8-4 23.363 23.363 0 0 0 4-4.8 25.617 25.617 0 0 0 3.04-5.44 27.164 27.164 0 0 0 2.4-6.72 26.473 26.473 0 0 0 0-6.24zM480.18 224h-352c-17.673 0-32 14.327-32 32s14.327 32 32 32h352c17.673 0 32-14.327 32-32s-14.327-32-32-32zM336.18 368h-208c-17.673 0-32 14.327-32 32 0 17.673 14.327 32 32 32h208c17.673 0 32-14.327 32-32 0-17.673-14.327-32-32-32z"
+                                        fill="#000000" data-original="#000000" class=""></path>
+                                </g>
+                            </svg></i>
+                    </li>
+                </div>
+            </div>
+
+        </div>
+        <div id="products" class="row list-group">
+            <h3>MONITIZE</h3>
+            <div class="griddo">
+
+                <div class="item">
+                    <div class="thumbnail">
+                        <div class="bbb">
+                            <img class="group list-group-image"
+                                src="./artizt-website-files/images/newicons/approved/adsart.png" alt="" />
+                            <p class="tex">Artizt</p>
+                        </div>
+
+                    </div>
+                    <div class="caption">
+                        <h4>Artizt</h4>
+                        <p id="tagpara">Freinds & Fans Hub</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumbnail">
+                        <div class="bbb">
+                            <img class="group list-group-image"
+                                src="./artizt-website-files/images/newicons/approved/adsart.png" alt="" />
+
+                            <p class="tex">
+                                Product title</p>
+                        </div>
+                    </div>
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p id="tagpara">Freinds & Fans Hub</p>
+
+                    </div>
+                </div>
+            </div>
+            <h3>ARTIZT OFFICE SPACE</h3>
+            <div class="griddo1 griddo">
+
+                <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <div class="bbb">
+                            <img class="group list-group-image"
+                                src="./artizt-website-files/images/newicons/approved/adsart.png" alt="" />
+                            <p class="tex">
+                                Product title</p>
+                        </div>
+
+                    </div>
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p id="tagpara">Freinds & Fans Hub</p>
+
+                    </div>
+                </div>
+                <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <div class="bbb">
+                            <img class="group list-group-image"
+                                src="./artizt-website-files/images/newicons/approved/adsart.png" alt="" />
+                            <p class="tex">
+                                Product title</p>
+
+                        </div>
+
+                    </div>
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p id="tagpara">Freinds & Fans Hub</p>
+
+                    </div>
+                </div>
+                <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <div class="bbb">
+                            <img class="" src="./artizt-website-files/images/newicons/approved/adsart.png" alt="" />
+                            <p class="tex">
+                                Product title</p>
+                        </div>
+
+                    </div>
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p id="tagpara"> Freinds & Fans Hub</p>
+
+                    </div>
+                </div>
+            </div>
+            <h3>ACTIVITIES</h3>
+            <div class="griddo2 griddo">
+
+                <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <div class="bbb">
+                            <img class="group list-group-image"
+                                src="./artizt-website-files/images/newicons/approved/adsart.png" alt="" />
+                            <p class="tex">
+                                Product title</p>
+                        </div>
+
+                    </div>
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p id="tagpara">Freinds & Fans Hub</p>
+
+                    </div>
+                </div>
+                <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <div class="bbb">
+                            <img class="group list-group-image"
+                                src="./artizt-website-files/images/newicons/approved/adsart.png" alt="" />
+                            <p class="tex">
+                                Product title</p>
+                        </div>
+
+                    </div>
+                    <div class="caption">
+                        <h4 class="group inner list-group-item-heading">
+                            Product title</h4>
+                        <p id="tagpara">Freinds & Fans Hub</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- </div><a style="font-size: 8pt; text-decoration: none" target="_blank" href="http://frontendfreecode.com">Free Frontend</a> -->
+
+</body>
+<style>
+    .bbb {
+        text-align: center;
+        width: 85%;
+        margin-bottom: -32px !important;
+        /* margin: auto; */
+    }
+
+    .tex {
+        /* font-size: 10px;
+         */
+        font-size: 14px;
+        margin-top: 3px;
+        font-weight: 700;
+
+    }
+
+    #products h3 {
+        /* text-align: left; */
+        margin-left: 30px;
+
+    }
+
+    .grid i {
+        width: 30px;
+        margin: auto;
+    }
+
+    .list i {
+        width: 30px;
+        margin: auto;
+    }
+
+    .list {
+        display: flex;
+        font-size: 21px;
+        gap: 15px;
+        /* justify-content: space-around; */
+    }
+
+    #products h4 {
+        font-size: 20px;
+    }
+
+    .caption {
+        line-height: 0px;
+    }
+
+    .thumbnail img {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        /* margin-left: 12px; */
+    }
+
+    .glyphicon {
+        margin-right: 5px;
+    }
+
+    .thumbnail {
+        margin: 10px 0px;
+        padding: 0px;
+        width: 100px;
+
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* -webkit-border-radius: 0px; */
+
+        border: 1px solid #3a3535cc;
+        /* -moz-border-radius: 0px; */
+        border-radius: 12px;
+    }
+
+    .item {
+        display: flex;
+        gap: 20px;
+        width: 300px;
+        margin-left: 25px;
+        /* text-align: center; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tex {
+        display: none;
+    }
+
+    .grid-template {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+    }
+</style>
+<script>
+    let but = document.querySelector(".but");
+    let griddo = document.querySelector(".griddo");
+    let griddo1 = document.querySelector(".griddo1");
+    let item = document.querySelectorAll(".item");
+
+    let griddo2 = document.querySelector(".griddo2");
+    let grid = document.querySelector(".grid");
+    let list = document.querySelector(".list");
+    let tex = document.querySelectorAll(".tex");
+// let bbb=document.querySelector()
+    let nm = document.querySelectorAll(".caption");
+    let ison = "false";
+    but.addEventListener("click", function () {
+
+
+        if (ison === "false") {
+
+
+            grid.style.display = "flex";
+            grid.style.gap = "15px";
+            list.style.display = "none";
+            griddo.classList.add('grid-template-columns');
+            griddo1.classList.add('grid-template-columns');
+            griddo2.classList.add('grid-template-columns');
+
+            for (let i = 0; i < nm.length; i++) {
+                nm[i].style.display = "none";
+
+
+                if (nm[i].style.display === "none") {
+                    for (let i = 0; i < tex.length; i++) {
+                        console.log(tex[i]);
+                        tex[i].style.display = "block";
+
+                    }
+                }
+            }
+
+            ison = "true";
+
+
+
+        }
+
+
+        else {
+
+
+            grid.style.display = "none";
+            list.style.display = "flex";
+            list.style.gap = "15px"
+            griddo.classList.remove('grid-template-columns');
+            griddo1.classList.remove('grid-template-columns');
+            griddo2.classList.remove('grid-template-columns');
+
+
+            for (let i = 0; i < nm.length; i++) {
+                nm[i].style.display = "inline";
+                if (nm[i].style.display === "inline") {
+
+                    for (let i = 0; i < tex.length; i++) {
+                        tex[i].style.display = "none";
+
+                    }
+                }
+
+            }
+
+            ison = "false";
+
+        }
+
+
+
+
+
+
+    })
+
+
+</script>
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artizt Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --color-dark-blue: #19495C;
+            --color-white: #ffffff;
+            --color-gray: #757676;
+            --color-light-gray: #F8F8F8;
+            --colo-siteblue: #19495C;
+            --color-black: #191A1A;
+            --text-dark-gray: #585858;
+            --font-inter: 'Inter', sans-serif;
+            --button-gradient: linear-gradient(90deg, #F58B1F 0%, #EE3C23 100%);
+            --color-orange: #F04923;
+            --color-red: #ff0000;
+            --kt-menu-dropdown-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        html,
+        body {
+            display: grid;
+            height: 100%;
+            place-items: center;
+            text-align: center;
+            background: #000;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            background: #fff;
+            padding: 20px 30px;
+            border: 1px solid #e35f07;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container .post {
+            display: none;
+        }
+
+        .container .text {
+            font-size: 22px;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .container .edit {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-size: 16px;
+            color: #666;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .container .edit:hover {
+            text-decoration: underline;
+        }
+
+        .container .star-widget input {
+            display: none;
+        }
+
+        .star-widget label {
+            font-size: 25px;
+            color: #302f2f;
+            padding: 15px;
+            float: right;
+            transition: all 0.2s ease;
+        }
+
+        input:not(:checked)~label:hover,
+        input:not(:checked)~label:hover~label {
+            color: #e35f07;
+        }
+
+        input:checked~label {
+            color: #e35f07;
+        }
+
+        input#rate-5:checked~label {
+            color: #e35f07;
+            text-shadow: 0 0 20px #952;
+        }
+
+        #rate-1:checked~form header:before {
+            content: "I just hate it ";
+            text-transform: uppercase
+        }
+
+        #rate-2:checked~form header:before {
+            content: "I don't like it ";
+            text-transform: uppercase
+        }
+
+        #rate-3:checked~form header:before {
+            content: "It is awesome ";
+            text-transform: uppercase
+        }
+
+        #rate-4:checked~form header:before {
+            content: "I just like it ";
+            text-transform: uppercase
+        }
+
+        #rate-5:checked~form header:before {
+            content: "I just love it ";
+            text-transform: uppercase
+        }
+
+        .container form {
+            display: none;
+        }
+
+        input:checked~form {
+            display: block;
+        }
+
+        form header {
+            width: 100%;
+            font-size: 14px;
+            color: #e35f07;
+            font-weight: 600;
+            margin: 5px 0 20px 0;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        form .textarea {
+            height: 100px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        form .textarea textarea {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            color: #eee;
+            border: 1px solid #333;
+            background: #222;
+            padding: 10px;
+            font-size: 17px;
+            resize: none;
+        }
+
+        .textarea textarea:focus {
+            border-color: #444;
+        }
+
+        form .btn {
+            height: 45px;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        form .btn button {
+            height: 100%;
+            width: 50%;
+            border-radius: 50px;
+            border: 1px solid #fff;
+            outline: none;
+            background: var(--button-gradient);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        form .btn button:hover {
+            background: #1b1b1b;
+        }
+
+        .rating-head h1 {
+            color: #888;
+            font-size: 16px;
+            font-weight: 600;
+
+        }
+
+        .modelclose_btn {
+            position: absolute;
+            top: -20px;
+            right: -12px;
+            border: 2px solid #d16206;
+            background: #0e374b !important;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            padding: 0 !important;
+            color: #FFFFFF;
+            opacity: 1;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 28px;
+        }
+
+        .modelclose_btn span {
+            position: relative;
+            top: -2px;
+        }
+
+
+        /* For Mobile Portrait View */
+        @media screen and (max-device-width: 480px) and (orientation: portrait) {
+            .container {
+                position: relative;
+                width: 350px;
+                background: #fff;
+                padding: 20px 30px;
+                border: 1px solid #e35f07;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .container .post {
+                display: none;
+            }
+
+            .container .text {
+                font-size: 22px;
+                color: #666;
+                font-weight: 600;
+            }
+
+            .container .edit {
+                position: absolute;
+                right: 10px;
+                top: 5px;
+                font-size: 16px;
+                color: #666;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            .container .edit:hover {
+                text-decoration: underline;
+            }
+
+            .container .star-widget input {
+                display: none;
+            }
+
+            .star-widget label {
+                font-size: 26px;
+                color: #302f2f;
+                padding: 12px;
+                margin-top: 20px;
+                float: right;
+                transition: all 0.2s ease;
+            }
+        }
+
+        .user-person li {
+            list-style: none;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-black);
+            line-height: 18px;
+            padding: 7px 40px 7px 40px;
+            position: relative;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .user-person small {
+            color: #8083A3;
+            font-size: 12px;
+            display: block;
+            font-weight: 400;
+        }
+
+        .user-person img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+
+
+        }
+        .rating-head{
+            margin-top: 10px;
+        }
+        .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999; 
+}
+
+.loader .loader_inner {
+	background-image: url("./artiztlogo.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 180px;  
+	width: 180px;
+	position: absolute; 
+}
+
+
+    </style>
+</head>
+
+<body>
+   
+    <div class="container">
+        <a href="home.php" class="close modelclose_btn">
+            <span aria-hidden="true">×</span>
+        </a>
+        <div class="post">
+            <div class="text">Thanks for rating us!</div>
+        </div>
+        <div class="star-widget">
+            <div class="user-person">
+                <li>
+                    <img src="images/recent-followers1.png" alt="" class="mCS_img_loaded">Paromita
+                    Haque <br>
+
+            </div>
+
+            <div class="rating-head">
+                <h1>Share your feedback about <br>
+                    <span id="project-movie">Vikram Movie</span>
+                </h1>
+            </div>
+
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+                <header></header>
+                <div class="btn">
+                    <button type="submit" class="btn btn-select border-radius-30 minwidth-150">Submit Rating</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        btn.onclick = () => {
+            widget.style.display = "none";
+            post.style.display = "block";
+            return false;
+        }
+
+        
+    </script>
+    
+
+</body>
+
+</html>
